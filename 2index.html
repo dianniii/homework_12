@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //задаем переменную с алфавитом
+        const alphabet = "абвгдежзийклмнопрстуфхцчшщъыьэюя";
+        //задаем переменную рандомной буквы из переменной выше
+        //первый первый случайный индекс
+        const randomIndex = Math.floor (Math.random() * alphabet.length);
+        const first = alphabet[randomIndex];
+        console.log(first);
+
+        //первый второй случайный индекс
+        const randomIndex2 = Math.floor (Math.random() * alphabet.length);
+        const second = alphabet[randomIndex2];
+        console.log(second);
+
+        //первый третий случайный индекс
+        const randomIndex3 = Math.floor (Math.random() * alphabet.length);
+        const third = alphabet[randomIndex3];
+        console.log(third);
+
+        //первый четвертый случайный индекс
+        const randomIndex4 = Math.floor (Math.random() * alphabet.length);
+        const fourth = alphabet[randomIndex3];
+        console.log(fourth);
+        
+        //извлекаем символы и объединяем их в строку 
+        const randomWord = first + second + third + fourth;
+        console.log(randomWord);
+    </script>
+</body>
+</html>
