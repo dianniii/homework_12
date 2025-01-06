@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Services</title>
+</head>
+<body>
+    <main>
+        <h1>
+            Сервис комментариев со спам фильтром
+        </h1>
+        <div class="containers">
+            <div class="container-comments">
+                <h3 class="title">
+                    Оставьте ваш комментарий
+                </h3>
+                <form id="form">
+                    <label class="form--label"
+                            for="name">Введите ваше Имя:</label></br>
+                    <input class="form--item"
+                            type="text" id="name" name="name"></br>
+                
+                    <label class="form--label"
+                            for="avatar">Введите ссылку вашего аватара:</label></br>
+                    <input class="form--item" 
+                            type="url" id="avatar" name="avatar"></br>
+                
+                    <label class="form--label"
+                            for="comment">Оставьте комментарий:</label></br>
+                    <textarea class="form--item" 
+                            id="comment" name="comment"></textarea></br>
+                
+                    <input class="submit"
+                            type="submit" value="Отправить">
+                </form>
+            </div>
+            <div id="container-chat">
+                <h3 class="title">
+                    Чат
+                </h3>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/JS/Script.js"></script>
+    <!-- ссылка на скрипт -->
+</body>
+</html>
