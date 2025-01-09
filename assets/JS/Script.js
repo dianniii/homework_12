@@ -16,7 +16,8 @@ document.getElementById('form').addEventListener('submit', function(event){
 
 // Преобразовать имя: удалить лишние пробелы и сделать первую букву заглавной
 function formatName(name) { 
-    return name.trim().replace(/\s+/g, '').replace(/^\w/, c => c.toUpperCase()); 
+    name = name.trim().replace(/\s+/g, '')
+    return name.charAt(0).toUpperCase() + name.slice(1);
 }
 
 function checkSpam(str) { 
